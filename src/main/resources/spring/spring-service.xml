@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx
+	 http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!-- 导入spring-dao -->
+	<import resource="classpath:spring/spring-dao.xml" />
+
+	<!--事务管理器-->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<!--引入数据源-->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<!--AOP切入点-->
+	<aop:config>
+		<aop:pointcut
+				expression="execution(* com.hpwnote.blog.back.service.*.*(..))"
+				id="trPointcut" />
+		<aop:advisor pointcut-ref="trPointcut" advice-ref="trAdvice" />
+	</aop:config>
+	<!--常用的方法前缀-->
+	<tx:advice id="trAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="call*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+</beans>

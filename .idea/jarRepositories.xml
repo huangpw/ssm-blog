@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="TooneV3PublicMavenRepository" />
+      <option name="name" value="TooneV3PublicMavenRepository" />
+      <option name="url" value="http://www.toone.com.cn:8818/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="vstore3xOwnerlib" />
+      <option name="name" value="vstore3xOwnerlib" />
+      <option name="url" value="http://vstore-service.yindangu.com/repositories/ownerlib/huangpw/109d520a189407259a9e67baae354eb4419f8c1f09fd4ad4667dd80560af9e57" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="vstoreRelease" />
+      <option name="name" value="vstoreRelease" />
+      <option name="url" value="http://vstore.yindangu.com/repositories/release/huangpw/85bfa66e57197bca81eea955d8661b25" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="vstoreDev" />
+      <option name="name" value="vstoreDev" />
+      <option name="url" value="http://vstore.yindangu.com/repositories/dev/huangpw/85bfa66e57197bca81eea955d8661b25" />
+    </remote-repository>
+  </component>
+</project>
