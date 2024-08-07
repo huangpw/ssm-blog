@@ -29,6 +29,13 @@
         <!--导入SqlMapConfig.xml:就是为了打印sql-->
         <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml" />
 
+		<!-- 开启驼峰命名转换 -->
+		<!--<property name="configuration">-->
+		<!--	<bean class="org.apache.ibatis.session.Configuration">-->
+		<!--		<property name="mapUnderscoreToCamelCase" value="true" />-->
+		<!--	</bean>-->
+		<!--</property>-->
+
 		<!--配置Mybatis分页插件:PageHelper-->
 		<property name="plugins">
 			<array>
