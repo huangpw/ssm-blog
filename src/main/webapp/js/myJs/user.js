@@ -5,7 +5,7 @@ function loginOut() {
         ,btn: ['确定', '取消']
         ,yes: function(index){
             layer.close(index);
-            location.href = "/blog/user/loginOut";
+            location.href = "/ssm-blog/user/loginOut";
         }
     });
 }
@@ -14,14 +14,14 @@ function loginOut() {
 function updateUser() {
     //表单序列化 能够把表单的内容拼接成 key=值&key=值...,返回值是字符串
     var form = $('#updateUserForm').serialize();
-    $.post("/blog/user/updateUser",form,function (data) {
+    $.post("/ssm-blog/user/updateUser",form,function (data) {
         if(data.ok){
             layer.alert(data.mess, {icon: 6});
 
             setTimeout(function () {
                 //重新登录,跳转到登录页面
                 //setTimeout:隔多长时间执行指定代码
-                location.href = "/blog/login.jsp";
+                location.href = "/ssm-blog/login.jsp";
             },1000);
 
         }

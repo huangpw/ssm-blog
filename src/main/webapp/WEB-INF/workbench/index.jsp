@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/ssm-blog/css/back/style1.css">
     <link rel="stylesheet" type="text/css" href="/ssm-blog/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/ssm-blog/images/favicon.ico" type="image/x-icon"/>
-    <script src="/ssm-blog/js/layer-3.5.1/layer.js" type="text/javascript"></script>
+    <%--<script src="/ssm-blog/js/layer-3.5.1/layer.js" type="text/javascript"></script>--%>
 </head>
 
 <body class="user-select">
@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="/">AndyHu</a> </div>
+          <a class="navbar-brand" href="/ssm-blog/workbench/index">HpwBlog</a> </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${sessionScope.user.nickname} <span class="caret"></span></a>
@@ -44,7 +44,7 @@
   <div class="row">
     <aside class="col-sm-3 col-md-2 col-lg-2 sidebar">
       <ul class="nav nav-sidebar">
-        <li class="active"><a href="index.html">报告</a></li>
+        <li class="active"><a href="/ssm-blog/workbench/index">报告</a></li>
       </ul>
       <ul class="nav nav-sidebar">
         <li><a href="/ssm-blog/toView/workbench/article/index">文章</a></li>
@@ -173,6 +173,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" >个人信息</h4>
         </div>
+        <%-- 个人信息 --%>
         <div class="modal-body">
           <table class="table" style="margin-bottom:0px;">
             <thead>

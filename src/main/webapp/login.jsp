@@ -23,7 +23,7 @@
 
                 <img alt="" src='/ssm-blog/images/user_icon_copy.png'>
             </div>
-            <input name="login" id="username" placeholder='用户名' maxlength="16" class="username" type='text' autofocus autocomplete="off"/>
+            <input name="login" id="username" placeholder='用户名' maxlength="16" class="username" type='text' autofocus autocomplete="off" value="admin"/>
             <div class='validation'>
                 <img alt="" src='/ssm-blog/images/tick.png'>
             </div>
@@ -32,7 +32,7 @@
             <div class='icon'>
                 <img alt="" src='/ssm-blog/images/lock_icon_copy.png'>
             </div>
-            <input name="pwd" id="password" class="passwordNumder" placeholder='密码' maxlength="16" type='text' autocomplete="off">
+            <input name="pwd" id="password" class="passwordNumder" placeholder='密码' maxlength="16" type='text' autocomplete="off" value="admin">
             <div class='validation'>
                 <img alt="" src='/ssm-blog/images/tick.png'>
             </div>
